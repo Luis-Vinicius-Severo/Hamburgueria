@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburgueria</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <nav class="navbar">
+
+      <a href="#" class="logo">
+        <i class="fa-solid fa-burger" style="color: #ff0000;">Burguer</i>
+      </a>
+
+      <ul data-menu="lista" id="menu">
+        <li class="nav_item"><a href="#inicio">Inicio</a></li>
+        <li class="nav_item"><a href="#cardapio">Cardápio</a></li>
+        <li class="nav_item"><a href="#testemunhas">Avaliação</a></li>
+        <li class="nav_item"><a href="#contato">Contato</a></li>
+      </ul>
+
+
+      <button class="btn-pedido" id="btn-carrinho" data-pedido="btn-pedido">Pedidos</button>
+
+
+      <button id="mobile_btn"> Menu </button>
+    </nav>
+
+
+    <div id="mobile_menu">
+      <ul id="mobile_lista">
+        <li class="nav-item">
+          <a href="#inicio">Início</a>
+        </li>
+        <li class="nav-item">
+          <a href="#cardapio">Cardápio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#testemunhas">Avaliações</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contato">Contato</a>
+        </li>
+      </ul>
+
+      <button class="btn-pedido" id="btn-carrinho" data-pedido="btn-pedido">Pedidos</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio">
+
+      <!-- <div class="shape"></div> -->
+
+      <div id="cta">
+        <h1 class="titulo">Saboreie a <span>excelência</span> em cada pedaço</h1>
+        <p class="descricao">Aqui, cada pedaço conta uma história de sabor, qualidade e dedicação para entregar o
+          hambúrguer perfeito.</p>
+
+
+        <div id="cta_botao">
+
+          <a href="#cardapio" class="btn-pedido">Cardápio</a>
+
+
+        </div>
+
+
+      </div>
+
+      <div id="banner">
+        <img src="./imagens/hamburguer-home.png" alt="Hamburguer">
+      </div>
+
+    </section>
+
+    <section id="cardapio">
+
+      <h2 class="section-titulo">Cardápio</h2>
+      <h3 class="section-subtitulo">feitos com amor</h3>
+
+      <div id="pratos">
+        <div class="prato">
+          <img src="./imagens/hamb-1.png" class="prato-imagem" alt="">
+          <h3 class="prato-titulo" data-nome="O Clássico Crocante">
+            O Clássico Crocante
+          </h3>
+          <span class="prato-descricao">
+            hamburguer de 2 Carne, queijo, bacon, alface, molho e pão brioche.
+          </span>
+          <div class="prato-preco">
+            <h4>R$20,00</h4>
+            <button class="btn-pedido" data-carrinho="btn-adicionar" data-preco="20.00">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="prato">
+          <img src="./imagens/hamb-2.png" class="prato-imagem" alt="">
+          <h3 class="prato-titulo" data-nome="Frango Supremo Bacon">
+            Frango Supremo Bacon
+          </h3>
+          <span class="prato-descricao">
+            hamburguer de Frango empanado, bacon, queijo, alface.
+          </span>
+          <div class="prato-preco">
+            <h4>R$ 28,00</h4>
+            <button class="btn-pedido" data-carrinho="btn-adicionar" data-preco="28.00">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="prato">
+          <img src="./imagens/hamb-3.png" class="prato-imagem" alt="">
+          <h3 class="prato-titulo" data-nome="O Duplo Rústico">
+            O Duplo Rústico
+          </h3>
+          <span class="prato-descricao">
+            hamburguer de 2 carnes, queijo, bacon, cogumelos salteados, pão com gergelim.
+          </span>
+          <div class="prato-preco">
+            <h4>R$ 35,00</h4>
+            <button class="btn-pedido" data-carrinho="btn-adicionar" data-preco="35.00">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="prato">
+          <img src="./imagens/hamb-4.png" class="prato-imagem" alt="">
+          <h3 class="prato-titulo" data-nome="Explosão Rústica">
+            Explosão Rústica
+          </h3>
+          <span class="prato-descricao">
+            hamburguer de carne, queijo, bacon, picles, cebola roxa, molho.
+          </span>
+          <div class="prato-preco">
+            <h4>R$ 30,00</h4>
+            <button class="btn-pedido" data-carrinho="btn-adicionar" data-preco="30.00">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="prato">
+          <img src="./imagens/hamb-5.png" class="prato-imagem" alt="">
+          <h3 class="prato-titulo" data-nome="Duplo Delírio">
+            Duplo Delírio
+          </h3>
+          <span class="prato-descricao">
+            hamburguer de 2 carnes, queijo, alface, tomate, molho.
+          </span>
+          <div class="prato-preco">
+            <h4>R$ 40,00</h4>
+            <button class="btn-pedido" data-carrinho="btn-adicionar" data-preco="40.00">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="prato">
+          <img src="./imagens/hamb-6.png" class="prato-imagem" alt="">
+          <h3 class="prato-titulo" data-nome="Simplesmente Perfeito">
+            Simplesmente Perfeito
+          </h3>
+          <span class="prato-descricao">
+            hamburguer de carne, queijo.
+          </span>
+          <div class="prato-preco">
+            <h4>R$ 15,00</h4>
+            <button class="btn-pedido" data-carrinho="btn-adicionar" data-preco="15.00">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="testemunhas">
+
+      <div id="testemunhas_content">
+        <h2 class="section-titulo">Avaliações </h2>
+        <h3 class="section-subtitulo">O que os clientes falam sobre nós:</h3>
+
+        <div id="feedbacks">
+          <div class="feedback">
+            <img src="./imagens/pic-2.png" class="feedback-avatar" alt="">
+
+            <div class="feedback-content">
+              <p>
+                Mulher
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </p>
+              <p>
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+              </p>
+            </div>
+          </div>
+
+          <div class="feedback">
+            <img src="./imagens/pic-3.png" class="feedback-avatar" alt="">
+
+            <div class="feedback-content">
+              <p>
+                Homem
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </p>
+              <p>
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn-pedido">
+          Ver mais avaliações
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <img src="./imagens/wave.svg" alt="">
+
+    <div id="footer-itens">
+
+      <span class="direitos"> &copyLuis Vinicius 2025. Todos os direitos reservados. </span>
+
+      <div>
+        <a href="#" class="logo">
+          <i class="fa-solid fa-burger" style="color: #ff0000;">Burguer</i>
+        </a>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <section class="checkout-container" data-pedidos="checkout-modal">
+    <div class="checkout">
+      <h2>Pedidos</h2>
+      <div class="checkout-itens">
+        <ul data-lista="lista-pedidos"></ul>
+        <p class="total" data-total="total-preco">total: <span class="total-preco">0.00</span></p>
+        <p>Endereço de entrega:</p>
+        <input type="text" placeholder="Digite seu endereço" id="endereço">
+        <div class="checkout-btn">
+          <button class="checkout-fechar" data-fechar="fechar-checkout">Fechar</button>
+          <button class="btn-pedido" data-finalizar="btnFinalizar">Finalizar pedido</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
