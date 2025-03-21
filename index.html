@@ -15,7 +15,7 @@
 
   <header class="header">
 
-    <nav class="navbar">
+    <nav class="navbar" data-scroll="suave">
 
       <a href="#" class="logo">
         <i class="fa-solid fa-burger" style="color: #ff0000;">Burguer</i>
@@ -250,7 +250,19 @@
 
     <div id="footer-itens">
 
-      <span class="direitos"> &copyLuis Vinicius 2025. Todos os direitos reservados. </span>
+      <div class="redes-sociais">
+        <a href="">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
 
       <div>
         <a href="#" class="logo">
@@ -269,7 +281,8 @@
         <ul data-lista="lista-pedidos"></ul>
         <p class="total" data-total="total-preco">total: <span class="total-preco">0.00</span></p>
         <p>Endereço de entrega:</p>
-        <input type="text" placeholder="Digite seu endereço" id="endereço">
+        <input type="text" placeholder="Digite seu endereço" id="endereco" class="endereco">
+        <p class="textoErro" id="textoErro">Digite o endereço certo !!!</p>
         <div class="checkout-btn">
           <button class="checkout-fechar" data-fechar="fechar-checkout">Fechar</button>
           <button class="btn-pedido" data-finalizar="btnFinalizar">Finalizar pedido</button>
@@ -279,6 +292,7 @@
 
   </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script type="module" src="./js/main.js"></script>
 </body>
 

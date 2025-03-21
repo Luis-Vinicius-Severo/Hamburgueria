@@ -11,6 +11,9 @@ export default function initCarrinho() {
     function checkoutFechar(event) {
       event.preventDefault();
       checkout.classList.remove('ativo');
+      endereco.value = '';
+      textoErro.classList.remove('ativo');
+      endereco.style.border = ' 2px solid var(--cor-primaria-6)';
     }
 
     function checkoutFora(event) {
