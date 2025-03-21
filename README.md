@@ -1,6 +1,6 @@
 # 🍔 Hamburgueria
 
-Um site institucional para uma hamburgueria, desenvolvido com HTML, CSS e JavaScript, com o objetivo de apresentar o cardápio, localização e informações de contato de forma clara e acessível.
+um site desenvolvido para apresentar um restaurante de hambúrgueres artesanais. Onde exibe carpadapio, avaliações e contato, proporcionando ao usuário com um design responsivo e interativo.
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -8,11 +8,9 @@ Um site institucional para uma hamburgueria, desenvolvido com HTML, CSS e JavaSc
 - **CSS3** - Estilização e responsividade  
 - **JavaScript** - Interatividade  
 
-## 🎨 Funcionalidades
+## 🎯 Funcionalidades
 
 -Apresentação do cardápio com preços e descrições dos produtos
-
--Informações sobre a hamburgueria, incluindo localização e horário de funcionamento
 
 -Seção de contato para clientes tirarem dúvidas ou fazerem pedidos
 
